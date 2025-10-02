@@ -36,3 +36,9 @@ flask run --host=0.0.0.0 --port=8000
 
 5. Ensure port 8000 is open in your security group settings.
 
+Your app only runs in the foreground, and it will stop as soon as you close your SSH session.
+
+Here is a way to make it run in the background on EC2:
+6. nohup flask run --host=0.0.0.0 --port=5000 &
+
+
